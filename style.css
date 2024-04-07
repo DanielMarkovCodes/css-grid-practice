@@ -1,0 +1,129 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the entire webpage */
+body {
+    background-image: url("IMG_1823.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Styling for the menu container */
+.menu {
+    background-color: rgba(255, 255, 255, 0.256); /* Transparent white background */
+    position: fixed; /* Position fixed */
+    top: 15px; /* Same top position as before */
+    left: 0; /* Ensure it's aligned to the left */
+    right: 0; /* Ensure it's aligned to the right */
+    margin: 0 auto; /* Centering horizontally */
+    width: 300px; /* Width of 300px */
+    height: 50px;
+    z-index: 999;
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Clip content that exceeds rounded corners */
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.224); /* Drop shadow */
+    border: 0.3px solid rgba(255, 255, 255, 0.5); /* Very thin faint border */
+    transition: transform 0.3s ease-out;
+}
+
+/* Styling for the menu buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    padding: 1 10px; /* Add padding to the menu container to create space between the buttons and the container borders */
+}
+
+.menu:hover {
+    transform: scale(1.1); /* Scale up by 10% when hovered */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.Home,
+.Projects,
+.Contact {
+    flex: 1; /* Make each button take up equal space */
+    margin: 5px; /* Add small margins between each button */
+    height: 40px; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.308); /* Transparent white background */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-radius: 20px; /* Rounded corners */
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.224); /* Drop shadow */
+    color: #ffffffbd;
+}
+
+/* Styling for the header container */
+.header-container {
+    background-color: white; /* White background */
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    border-radius: 25px; /* Same border radius as menu */
+    background-image: url('IMG_1951.JPG'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+}
+
+/* Styling for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Columns with minimum width of 300px */
+    gap: 20px; /* Gap between grid items (you can adjust this as needed) */
+    margin: 20px;
+    grid-auto-rows: auto; /* Adjust row height based on content */
+}
+
+/* Styling for each grid item */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.308); /* Transparent white background */
+    position: relative; /* Position relative for containing absolute children */
+    padding: 20px; /* Padding for content inside grid items (you can adjust this as needed) */
+    text-align: center; /* Center-align content inside grid items */
+    height: auto; /* Allow the grid item to adjust its height based on content */
+    border-radius: 20px; /* Rounded corners */
+    border: 0.3px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.224); /* Drop shadow */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease-out;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Scale up by 10% when hovered */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Styling for 16:9 box inside each grid item */
+.thumbnail {
+    background-color: rgb(80, 80, 80); /* Example color for the 16:9 box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.244);
+    width: 100%; /* Set width to 100% */
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    position: relative; /* Position relative */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Styling for title box */
+.title {
+    background-color: rgba(80, 80, 80, 0); /* Example color for the title box */
+    height: 70px; /* Specific height for the title */
+    padding: 10px; /* Padding for the title box */
+}
+
